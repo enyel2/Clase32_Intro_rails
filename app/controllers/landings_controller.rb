@@ -1,4 +1,8 @@
 class LandingsController < ApplicationController
+  #before_action es un metodo / si de desepo poner mas en las otras paginas 
+  #http://localhost:3000/landings/y 
+  before_action :loquesea, only: [:z, :y]	
+
   def x
   end
 
@@ -13,7 +17,13 @@ class LandingsController < ApplicationController
   	20.times do |i|
   		@val << "nombre#{i+1}"
   	end
+  end
   	#@valor = "Esta es mi variable del metodo del controller"
 
+  private
+
+  def loquesea
+  	@mensaje = "Yo estoy en un callback"
   end
+
 end
