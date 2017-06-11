@@ -20,10 +20,6 @@ class LandingsController < ApplicationController
   end
   	#@valor = "Esta es mi variable del metodo del controller"
 
-  private
-
-  def loquesea
-  	@mensaje = "Yo estoy en un callback"
-  end
+  
 
 end
